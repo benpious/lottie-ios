@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LOTComposition.h"
 #import "LOTAnimationView_Compat.h"
 
 typedef void (^LOTAnimationCompletionBlock)(BOOL animationFinished);
@@ -18,6 +19,7 @@ typedef void (^LOTAnimationCompletionBlock)(BOOL animationFinished);
 + (instancetype)animationFromJSON:(NSDictionary *)animationJSON NS_SWIFT_NAME(init(json:));
 
 - (instancetype)initWithContentsOfURL:(NSURL *)url;
+- (instancetype)initWithModel:(LOTComposition *)model;
 
 @property (nonatomic, readonly) BOOL isAnimationPlaying;
 @property (nonatomic, assign) BOOL loopAnimation;

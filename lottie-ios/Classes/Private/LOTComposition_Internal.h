@@ -1,21 +1,18 @@
 //
-//  LOTScene.h
-//  LottieAnimator
+//  LOTAnimationView_Internal.h
+//  Lottie
 //
-//  Created by Brandon Withrow on 12/14/15.
-//  Copyright © 2015 Brandon Withrow. All rights reserved.
+//  Created by Brandon Withrow on 12/7/16.
+//  Copyright © 2016 Brandon Withrow. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreGraphics/CoreGraphics.h>
+#import "LOTComposition.h"
 
-@class LOTLayerGroup;
+NS_ASSUME_NONNULL_BEGIN
+
 @class LOTLayer;
-@class LOTAssetGroup;
 
-@interface LOTComposition : NSObject
-
-- (instancetype)initWithJSON:(NSDictionary *)jsonDictionary;
+@interface LOTComposition ()
 
 @property (nonatomic, readonly) CGRect compBounds;
 @property (nonatomic, readonly) NSNumber *startFrame;
@@ -26,3 +23,5 @@
 @property (nonatomic, readonly) LOTAssetGroup *assetGroup;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -14,6 +14,7 @@
 #import "LOTAnimationView_Internal.h"
 #import "LOTAnimationCache.h"
 #import "LOTCompositionLayer.h"
+#import "LOTComposition_Internal.h"
 
 @implementation LOTAnimationState {
   BOOL _needsAnimationUpdate;
